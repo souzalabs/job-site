@@ -24,7 +24,7 @@ export default function Body() {
         <a 
           href="https://api.whatsapp.com/send?phone=5516994072920" 
           target="_blank"
-          className='flex gap-4 bg-whatsapp py-4 px-8 justify-center align-items sm:w-60 m-auto'
+          className='flex gap-4 bg-whatsapp py-4 px-8 justify-center align-items sm:w-60 sm:m-auto'
         >
           <WhatsApp />
           
