@@ -1,0 +1,39 @@
+.professional-card {
+    width: 1090px;
+}
+
+.professional-card_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #1c1e21;
+    padding: 4vh;
+    gap: 8vh;
+}
+
+.professional-card img {
+    border-radius: 100%;
+    height: calc(334px - 8vh);
+    max-width: unset !important;
+}
+
+.right-section {
+    display: flex;
+    background: #45C1C6;
+    position: relative;
+}
+
+.right-section p {
+    padding: 4vh;
+}
+
+.square {
+    height: 4vh;
+    width: 4vh;
+    background: #45C1C6;
+    position: absolute;
+    transform: rotate(45deg);
+    top: calc(50% - 2vh);
+    left: -2vh;
+}

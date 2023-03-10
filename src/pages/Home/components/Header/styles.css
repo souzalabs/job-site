@@ -1,0 +1,39 @@
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vh;
+}
+
+.title img {
+    height: 8vh;
+    width: 8vh;
+}
+
+.title h1 {
+    font-size: 48px;
+}
+
+.title-divisor {
+    display: flex;
+    height: 8vh;
+    width: 1px;
+    background: rgba(255, 255, 255, 255);
+    opacity: 0.2;
+}
+
+.left-header-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+}
+
+.left-header-section h1 {
+    text-transform: uppercase;
+    font-size: 31px;
+    font-weight: 700;
+}
+
+.specialyst-description p {
+    font-size: 12px;
+}
