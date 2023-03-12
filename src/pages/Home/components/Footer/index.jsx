@@ -1,9 +1,5 @@
-import './styles.css'
-
 export default function Footer() {
   return (
-    <div className="footer">
-      SOUZA LABS © 2023
-    </div>
+    <h1>Footer</h1>
   )
 }
