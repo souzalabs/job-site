@@ -153,7 +153,7 @@ export default function Onboard() {
             </div>
 
             {isOpen1 && <p className='bg-pesca-maravilhosa text-white p-4 text-justify text-sm'>
-              O valor mínimo que deve ser investido em cada plataforma é de pelo menos 1 dólar/dia, o que equivale a pelo menos R$ 6,00/dia. Já o valor do nosso serviço é cobrado individualmente
+              O valor mínimo que deve ser investido em cada plataforma é de pelo menos 1 dólar/dia, o que equivale a pelo menos R$ 6,00/dia. Já o valor do nosso serviço é cobrado individualmente.
             </p>}
           </div>
 
