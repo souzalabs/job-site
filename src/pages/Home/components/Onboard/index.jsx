@@ -35,7 +35,7 @@ export default function Onboard() {
             <p className='text-center text-sm sm:text-left sm:text-base'>Anuncie nas maiores plataformas de vendas do mundo e traga clientes para a sua empresa todos os dias.</p>
           </div>
 
-          <a href="https://api.whatsapp.com/send?phone=5516994072920" target="_blank" className='no-underline'>
+          <a href="https://api.whatsapp.com/send?phone=5516994072920" target="_blank" className='no-underline' onClick={() => window.lintrk('track', { conversion_id: 12724033 })}>
             <img src={ Bt4 } alt="" className='w-60 xl:w-64' />
           </a>
         </div>
@@ -86,7 +86,7 @@ export default function Onboard() {
               Vamos embarcar nessa?
             </p>
 
-            <a href="https://api.whatsapp.com/send?phone=5516994072920" target="_blank" className='sm:flex no-underline sm:w-72 xl:w-96'>
+            <a href="https://api.whatsapp.com/send?phone=5516994072920" target="_blank" className='sm:flex no-underline sm:w-72 xl:w-96' onClick={() => window.lintrk('track', { conversion_id: 12724033 })}>
               <img src={ Bt3 } alt="" />
             </a>
           </div>
@@ -109,7 +109,7 @@ export default function Onboard() {
             <img src={ Card6 } alt="" />
           </div>
 
-          <a href="https://api.whatsapp.com/send?phone=5516994072920" target="_blank" className='no-underline'>
+          <a href="https://api.whatsapp.com/send?phone=5516994072920" target="_blank" className='no-underline' onClick={() => window.lintrk('track', { conversion_id: 12724033 })}>
             <img src={ Bt2 } alt="" className='w-64' />
           </a>
         </div>
@@ -222,7 +222,7 @@ export default function Onboard() {
         </div>
 
 
-        <a href="https://api.whatsapp.com/send?phone=5516994072920" target="_blank" className='no-underline'>
+        <a href="https://api.whatsapp.com/send?phone=5516994072920" target="_blank" className='no-underline' onClick={() => window.lintrk('track', { conversion_id: 12724033 })}>
           <img src={ Bt1 } alt="" className='w-60 lg:w-72' />
         </a>
       </div>
