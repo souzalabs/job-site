@@ -8,6 +8,7 @@ import Bt1 from '../../../../assets/button_1.png'
 import Eu2 from '../../../../assets/eu_fundo_azul.png'
 import ArrowRight from '../../../../assets/iconmonstr-arrow-63-240.png'
 import ArrowDown from '../../../../assets/iconmonstr-arrow-65-240.png'
+import AdsExtended from '../../../../assets/ads_extended.png'
 
 import Card1 from '../../../../assets/1.png'
 import Card2 from '../../../../assets/2.png'
@@ -27,36 +28,38 @@ export default function Onboard() {
 
   return (
     <div className='flex flex-col'>
-      <div className="bg-arrows-bg w-screen h-screen bg-cover bg-no-repeat bg-top">
-        <div className='flex flex-col justify-center items-center h-full w-full p-6 gap-4'>
+      <div className="bg-arrows-bg h-screen bg-cover bg-no-repeat bg-top sm:bg-bg-lg sm:grid grid-cols-2 xl:h-full">
+        <div className='flex flex-col justify-center items-center h-full w-full p-6 gap-4 sm:items-start sm:p-14 xl:p-32'>
           <div className='flex flex-col justify-center items-center gap-2'>
-            <p className='font-bold text-xl text-center'>AUMENTE AS VENDAS DA SUA EMPRESA ATRAVÉS DE <span className='text-pesca-maravilhosa'>ANÚNCIOS ESTRATÉGICOS</span></p>
-            <p className='text-center text-sm'>Anuncie nas maiores plataformas de vendas do mundo e traga clientes para a sua empresa todos os dias.</p>
+            <p className='font-bold text-xl text-center sm:text-left sm:text-3xl sm:leading-9 xl:text-4xl xl:leading-10'>AUMENTE AS VENDAS DA SUA EMPRESA ATRAVÉS DE <span className='text-pesca-maravilhosa'>ANÚNCIOS ESTRATÉGICOS!</span></p>
+            <p className='text-center text-sm sm:text-left sm:text-base'>Anuncie nas maiores plataformas de vendas do mundo e traga clientes para a sua empresa todos os dias.</p>
           </div>
 
           <a href="https://api.whatsapp.com/send?phone=5516994072920" target="_blank" className='no-underline'>
-            <img src={ Bt4 } alt="" className='w-60' />
+            <img src={ Bt4 } alt="" className='w-60 xl:w-64' />
           </a>
         </div>
       </div>
 
-      <div className='bg-fundo-branco w-screen h-auto bg-cover bg-no-repeat bg-top flex justify-center items-center py-10 flex-col gap-6'>
-        <div className='flex flex-col px-8'>
-          <h1 className='text-pesca-maravilhosa font-bold text-xl text-center'>PRINCIPAIS SERVIÇOS</h1>
+      <div className='bg-fundo-branco h-auto bg-cover bg-no-repeat bg-top flex justify-center items-center py-10 flex-col gap-6 sm:px-14 lg:px-40 xl:px-60 xl:py-14'>
+        <div className='flex flex-col px-8 justify-center items-center'>
+          <h1 className='text-pesca-maravilhosa font-bold text-xl text-center lg:text-2xl xl:text-3xl'>PRINCIPAIS SERVIÇOS</h1>
 
-          <p className='text-bg text-center text-sm'>
+          <p className='text-bg text-center text-sm font-medium xl:text-base'>
             PLANEJAMENTO DE CAMPANHA DE ACORDO COM SEU NEGÓCIO
           </p>
         </div>
 
-        <img src={ Ads } alt="" className='h-screen' />
+        <img src={ Ads } alt="" className='h-screen sm:hidden' />
+
+        <img src={ AdsExtended } alt="" className='hidden w-screen sm:flex' />
       </div>
 
-      <div className='bg-black p-6 flex flex-col gap-4'>
-        <div className='flex flex-col gap-4'>
+      <div className='bg-black p-6 flex flex-col gap-4 justify-center items-center xl:py-14'>
+        <div className='flex flex-col gap-4 sm:grid grid-cols-2 justify-center items-center sm:px-14 lg:px-36 xl:px-60'>
           <div className='relative'>
-            <div className='flex flex-col gap-4'>
-              <img src={Logo} alt="" />
+            <div className='flex flex-col gap-4 xl:px-10'>
+              <img src={ Logo } alt="" />
               <img src={ Eu } alt="" />
             </div>
 
@@ -64,35 +67,35 @@ export default function Onboard() {
           </div>
 
           <div className='flex flex-col gap-4'>
-            <p className='text-sm'>
+            <p className='text-sm sm:text-base'>
               Nosso principal objetivo é <span className='text-pesca-maravilhosa'>conectar você ao cliente qualificado e aumentar as vendas da sua empresa</span>, com as melhores estratégias no mundo digital.
             </p>
 
-            <p className='text-sm'>
+            <p className='text-sm sm:text-base'>
               Se você está buscando:
             </p>
 
-            <p className='text-sm'>
+            <p className='text-sm sm:text-base'>
               <span className='font-bold'>•</span> Aumentar o faturamento do seu negócio;<br />
               <span className='font-bold'>•</span> Parar de depender das indicações;<br />
               <span className='font-bold'>•</span> Bater as suas metas de venda;<br />
               <span className='font-bold'>•</span> Lucrar mais;<br />
             </p>
 
-            <p className='text-sm'>
+            <p className='text-sm sm:text-base'>
               Vamos embarcar nessa?
             </p>
-          </div>
 
-          <a href="https://api.whatsapp.com/send?phone=5516994072920" target="_blank" className='no-underline'>
-            <img src={ Bt3 } alt="" />
-          </a>
+            <a href="https://api.whatsapp.com/send?phone=5516994072920" target="_blank" className='sm:flex no-underline sm:w-72 xl:w-96'>
+              <img src={ Bt3 } alt="" />
+            </a>
+          </div>
         </div>
 
         <div className='flex flex-col gap-4 items-center'>
-          <h1 className='text-center font-semibold text-xl'>COMO FUNCIONA NOSSO SERVIÇO NA PRÁTICA</h1>
+          <h1 className='text-center font-semibold text-xl xl:text-2xl'>COMO FUNCIONA NOSSO SERVIÇO NA PRÁTICA?</h1>
 
-          <div className='flex flex-col gap-4'>
+          <div className='flex flex-col gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:px-4 xl:px-8'>
             <img src={ Card1 } alt="" />
 
             <img src={ Card2 } alt="" />
@@ -106,21 +109,20 @@ export default function Onboard() {
             <img src={ Card6 } alt="" />
           </div>
 
-          
           <a href="https://api.whatsapp.com/send?phone=5516994072920" target="_blank" className='no-underline'>
             <img src={ Bt2 } alt="" className='w-64' />
           </a>
         </div>
       </div>
 
-      <div className='flex flex-col justify-center items-center pt-6 pb-4 gap-4'>
-        <img src={ Eu2 } alt="" className='px-12' />
+      <div className='flex flex-col justify-center items-center pt-6 pb-4 gap-4 bg-me-back bg-cover bg-no-repeat sm:bg-right sm:grid sm:grid-cols-2 px-14 xl:py-14'>
+        <img src={ Eu2 } alt="" className='sm:px-6' />
 
-        <div className='flex flex-col gap-4 px-6'>
+        <div className='flex flex-col gap-4 sm:px-6'>
           <div className='flex flex-col gap-2'>
-            <h1 className='text-black font-bold text-2xl'>QUEM SOU EU?</h1>
+            <h1 className='text-black font-bold text-xl lg:text-2xl xl:text-3xl'>QUEM SOU EU?</h1>
 
-            <div className='h-1.5 w-48 bg-pesca-maravilhosa'></div>
+            <div className='h-1.5 w-40 lg:w-48 bg-pesca-maravilhosa'></div>
           </div>
 
           <p className='text-black text-justify'>Me chamo Kelven Souza, trabalho com tecnologia desde quando estava com 16 anos de idade, são mais de seis anos na área. Estudei em uma das melhores faculdades de negócio da América Latina (FEA - USP) e trabalhei análisando dados e desenvolvendo software em grandes empresas como, o importante laboratório de pesquisas em economia social LEPES, bem como fui um dos primeiros desenvolvedores da Startup Eyecare Health que já há um tempo saiu na mídia Valor Econômico e encerrei a minha carreira, como funcionário, no Grupo Criar - um conglomerado de empresas de mais de 31 anos.</p>
@@ -129,15 +131,15 @@ export default function Onboard() {
         </div>
       </div>
 
-      <div className='w-screen bg-black px-6 pt-4 pb-6 flex flex-col gap-4'>
+      <div className='bg-black px-6 pt-4 pb-6 flex flex-col gap-4 sm:px-14 xl:py-10'>
         <div className='flex flex-col gap-2'>
-          <h1 className='font-semibold text-xl'>DÚVIDAS FREQUENTES</h1>
+          <h1 className='font-semibold text-xl lg:text-2xl'>DÚVIDAS FREQUENTES</h1>
 
           <div className='h-1.5 w-60 bg-pesca-maravilhosa'></div>
         </div>
 
         <div className='flex flex-col border-solid border-2 border-pesca-maravilhosa'>
-          <div className='flex flex-col' onClick={() => setIsOpen1(prev => !prev)}>
+          <div className='flex flex-col cursor-pointer' onClick={() => setIsOpen1(prev => !prev)}>
             <div className='flex flex-row items-center justify-center gap-2 p-2 border-solid border-b-2 border-pesca-maravilhosa'>
               <div className='flex h-4 justify-center items-center'>
                 {!isOpen1 ? (
@@ -147,7 +149,7 @@ export default function Onboard() {
                 )}
               </div>
 
-              <h1 className='text-sm font-semibold w-full'>Quanto custa?</h1>
+              <h1 className='text-sm font-semibold w-full lg:text-base'>Quanto custa?</h1>
             </div>
 
             {isOpen1 && <p className='bg-pesca-maravilhosa text-white p-4 text-justify text-sm'>
@@ -155,7 +157,7 @@ export default function Onboard() {
             </p>}
           </div>
 
-          <div className='flex flex-col' onClick={() => setIsOpen2(prev => !prev)}>
+          <div className='flex flex-col cursor-pointer' onClick={() => setIsOpen2(prev => !prev)}>
             <div className='flex flex-row items-center justify-center gap-2 p-2 border-solid border-b-2 border-pesca-maravilhosa'>
               <div className='flex h-4 justify-center items-center'>
                 {!isOpen2 ? (
@@ -165,7 +167,7 @@ export default function Onboard() {
                 )}
               </div>
 
-              <h1 className='text-sm font-semibold w-full'>Quando vou começar a ver os resultados das minhas campanhas?</h1>
+              <h1 className='text-sm font-semibold w-full lg:text-base'>Quando vou começar a ver os resultados das minhas campanhas?</h1>
             </div>
 
             {isOpen2 && <p className='bg-pesca-maravilhosa text-white p-4 text-justify text-sm'>
@@ -174,7 +176,7 @@ export default function Onboard() {
             </p>}
           </div>
 
-          <div className='flex flex-col' onClick={() => setIsOpen3(prev => !prev)}>
+          <div className='flex flex-col cursor-pointer' onClick={() => setIsOpen3(prev => !prev)}>
             <div className='flex flex-row items-center justify-center gap-2 p-2 border-solid border-b-2 border-pesca-maravilhosa'>
               <div className='flex h-4 justify-center items-center'>
                 {!isOpen3 ? (
@@ -184,7 +186,7 @@ export default function Onboard() {
                 )}
               </div>
 
-              <h1 className='text-sm font-semibold w-full'>É certo que terei resultados?</h1>
+              <h1 className='text-sm font-semibold w-full lg:text-base'>É certo que terei resultados?</h1>
             </div>
 
             {isOpen3 && <p className='bg-pesca-maravilhosa text-white p-4 text-justify text-sm'>
@@ -192,7 +194,7 @@ export default function Onboard() {
             </p>}
           </div>
 
-          <div className='flex flex-col' onClick={() => setIsOpen4(prev => !prev)}>
+          <div className='flex flex-col cursor-pointer' onClick={() => setIsOpen4(prev => !prev)}>
             <div className='flex flex-row items-center justify-center gap-2 p-2'>
               <div className='flex h-4 justify-center items-center'>
                 {!isOpen4 ? (
@@ -202,7 +204,7 @@ export default function Onboard() {
                 )}
               </div>
 
-              <h1 className='text-sm font-semibold w-full'>Posso parar de anunciar em qualquer momento?</h1>
+              <h1 className='text-sm font-semibold w-full lg:text-base'>Posso parar de anunciar em qualquer momento?</h1>
             </div>
 
             {isOpen4 && <p className='bg-pesca-maravilhosa text-white p-4 text-justify text-sm'>
@@ -212,20 +214,20 @@ export default function Onboard() {
         </div>
       </div>
 
-      <div className='bg-white px-4 py-6 flex flex-col gap-4 justify-center items-center'>
+      <div className='bg-white px-4 py-6 flex flex-col gap-4 justify-center items-center sm:px-40 sm:px-80 lg:px-72 xl:px-100 xl:py-14'>
         <div className='flex flex-col gap-4'>
-          <h1 className='text-black text-xl text-center font-normal'>ESTÁ PREPARADO PARA AMPLIAR A SUA <span className='text-pesca-maravilhosa font-semibold'>CARTELA DE CLIENTES?</span></h1>
+          <h1 className='text-black text-xl text-center font-normal lg:text-2xl'>ESTÁ PREPARADO PARA AMPLIAR A SUA <span className='text-pesca-maravilhosa font-semibold'>CARTELA DE CLIENTES?</span></h1>
 
-          <p className='text-black text-center text-sm'>Estamos prontos para criar sua estratégia de comunicação e o posicionamento da sua marca para garantir liderança e destaque no mercado.</p>
+          <p className='text-black text-center text-sm sm:text-base'>Estamos prontos para criar sua estratégia de comunicação e o posicionamento da sua marca para garantir liderança e destaque no mercado.</p>
         </div>
 
 
         <a href="https://api.whatsapp.com/send?phone=5516994072920" target="_blank" className='no-underline'>
-          <img src={ Bt1 } alt="" className='w-60' />
+          <img src={ Bt1 } alt="" className='w-60 lg:w-72' />
         </a>
       </div>
 
-      <div className='w-screen h-10 bg-black flex justify-center items-center text-pp'>
+      <div className='h-10 bg-black flex justify-center items-center text-xs'>
         SOUZA LABS © 2023
       </div>
     </div>
