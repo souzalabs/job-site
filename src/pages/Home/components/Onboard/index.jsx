@@ -115,7 +115,7 @@ export default function Onboard() {
         </div>
       </div>
 
-      <div className='flex flex-col justify-center items-center pt-6 pb-4 gap-4 bg-me-back bg-cover bg-no-repeat sm:bg-right sm:grid sm:grid-cols-2 px-14 xl:py-14'>
+      <div className='flex flex-col justify-center items-center pt-6 pb-4 gap-4 bg-me-back bg-cover bg-no-repeat bg-right sm:grid sm:grid-cols-2 px-14 xl:py-14'>
         <img src={ Eu2 } alt="" className='sm:px-6' />
 
         <div className='flex flex-col gap-4 sm:px-6'>
