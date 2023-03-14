@@ -127,7 +127,7 @@ export default function Onboard() {
 
           <p className='text-black text-justify'>Me chamo Kelven Souza, trabalho com tecnologia desde quando estava com 16 anos de idade, são mais de seis anos na área. Estudei em uma das melhores faculdades de negócio da América Latina (FEA - USP) e trabalhei análisando dados e desenvolvendo software em grandes empresas como, o importante laboratório de pesquisas em economia social LEPES, bem como fui um dos primeiros desenvolvedores da Startup Eyecare Health que já há um tempo saiu na mídia Valor Econômico e encerrei a minha carreira, como funcionário, no Grupo Criar - um conglomerado de empresas de mais de 31 anos.</p>
         
-          <p className='text-black text-justify'>Hoje, dono da minha própria empresa e entendendo a dor de ser um empreendedor quero te dar a chance de sermos sócios, sim, porque a minha prosperidade depende dos resultados do meu trabalho e do sucesso do seu negócio.</p>
+          <p className='text-black text-justify'>Hoje, com a minha própria empresa de tecnologia quero te convidar para experimentar os nossos serviços e alcançar novos horizontes com o seu negócio.</p>
         </div>
       </div>
 
